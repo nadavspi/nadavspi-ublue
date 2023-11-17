@@ -1,4 +1,4 @@
-name: ublue-image
+name: nadavspi-ublue
 description: my ublue image
 
 base-image: ghcr.io/ublue-os/silverblue-main
