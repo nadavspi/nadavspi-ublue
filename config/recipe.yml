@@ -12,10 +12,13 @@ modules:
   - type: rpm-ostree
     install: 
       - awesome
+      - feh
+      - flameshot
       - kitty
+      - polybar
+      - redshift
+      - rofi
       - volumeicon
-      - gnome-keyring
-      - Thunar
     remove:
       - firefox 
       - firefox-langpacks 
@@ -37,7 +40,6 @@ modules:
         - md.obsidian.Obsidian
         - net.codeindustry.MasterPDFEditor
         - org.fcitx.Fcitx5
-        - org.flameshot.Flameshot
         - org.mozilla.firefox
         - org.pulseaudio.pavucontrol
         - us.zoom.Zoom
