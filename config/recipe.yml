@@ -45,3 +45,8 @@ modules:
   - type: script
     scripts:
       - signing.sh
+
+  - type: systemd
+    system:
+      enabled:
+        - sshd.service
