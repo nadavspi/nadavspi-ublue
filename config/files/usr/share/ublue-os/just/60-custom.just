@@ -1,3 +1,6 @@
 !include /usr/share/ublue-os/just/100-bling.just
 
-# Include some of your custom scripts here!
+dotfiles-clone: 
+  nix run "https://flakehub.com/f/ublue-os/fleek/*.tar.gz" -- join git@github.com:nadavspi/dotfiles.git && nix run "https://flakehub.com/f/ublue-os/fleek/*.tar.gz" -- apply
+
+
