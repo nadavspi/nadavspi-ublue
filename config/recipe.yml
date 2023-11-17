@@ -10,6 +10,8 @@ modules:
       - usr: /usr
 
   - type: rpm-ostree
+    repos:
+      - https://copr.fedorainfracloud.org/coprs/coolj/awesome-luajit-nightly/repo/fedora-%OS_VERSION%/coolj-awesome-luajit-nightly-fedora-%OS_VERSION%.repo
     install: 
       - awesome
       - feh
@@ -19,6 +21,7 @@ modules:
       - redshift
       - rofi
       - volumeicon
+      - zsh
     remove:
       - firefox 
       - firefox-langpacks 
