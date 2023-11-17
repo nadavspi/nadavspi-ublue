@@ -28,7 +28,6 @@ modules:
 
   - type: bling 
     install:
-      - justfiles 
       - nix-installer 
       - 1password 
 
