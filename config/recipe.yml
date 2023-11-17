@@ -38,6 +38,7 @@ modules:
         - com.slack.Slack
         - io.mpv.Mpv
         - md.obsidian.Obsidian
+        - net.ankiweb.Anki
         - net.codeindustry.MasterPDFEditor
         - org.fcitx.Fcitx5
         - org.mozilla.firefox
