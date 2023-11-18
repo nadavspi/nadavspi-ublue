@@ -52,9 +52,5 @@ modules:
   - type: script
     scripts:
       - signing.sh
+      - enable-systemd.sh
 
-  - type: systemd
-    system:
-      enabled:
-        - sshd.service
-        - var-mnt-docs.automount
