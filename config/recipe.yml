@@ -57,3 +57,10 @@ modules:
     system:
       enabled:
         - sshd.service
+        - var-mnt-appdata.automount
+        - var-mnt-backups.automount
+        - var-mnt-data.automount
+        - var-mnt-docker.automount
+        - var-mnt-docs.automount
+        - var-mnt-isos.automount
+        - var-mnt-photos.automount
