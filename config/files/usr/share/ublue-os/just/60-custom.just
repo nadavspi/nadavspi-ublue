@@ -1,7 +1,24 @@
+dotfiles:
+  cd ~/src/dotfiles/
+
 dotfiles-clone: 
-  nix run "https://flakehub.com/f/ublue-os/fleek/*.tar.gz" -- join git@github.com:nadavspi/dotfiles.git
+  #!/usr/bin/env bash
+  set -euo pipefail
+  dir=~/src/dotfiles
+  if [ -d "$dir" ]; then
+    echo "$dir already exists."
+    exit
+  fi
+  mkdir -p ~/src
+  cd ~/src
+  git clone git@github.com:nadavspi/dotfiles.git
 
-hm-apply:
-  fleek apply -l src/dotfiles
-
+USER := env_var('USER')
+HOST := env_var('HOSTNAME')
+# Apply home manager config 
+apply:
+  #!/usr/bin/env bash
+  set -euo pipefail
+  cd ~/src/dotfiles
+  nix run --impure home-manager/master -- -b bak switch --flake .#{{USER}}@{{HOST}}
 
