@@ -57,3 +57,4 @@ modules:
     system:
       enabled:
         - sshd.service
+        - var-mnt-docs.automount
