@@ -14,9 +14,11 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/coolj/awesome-luajit-nightly/repo/fedora-%OS_VERSION%/coolj-awesome-luajit-nightly-fedora-%OS_VERSION%.repo
     install: 
       - awesome
+      - blueman
       - feh
       - flameshot
       - kitty
+      - network-manager-applet
       - polybar
       - redshift
       - rofi
