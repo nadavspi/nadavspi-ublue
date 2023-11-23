@@ -19,8 +19,8 @@ modules:
       - flameshot
       - input-remapper
       - kitty
+      - mpv
       - network-manager-applet
-      - polybar
       - redshift
       - rofi
       - volumeicon
@@ -41,7 +41,6 @@ modules:
         - com.github.Eloston.UngoogledChromium
         - com.github.tchx84.Flatseal
         - com.slack.Slack
-        - io.mpv.Mpv
         - md.obsidian.Obsidian
         - net.ankiweb.Anki
         - net.codeindustry.MasterPDFEditor
