@@ -1,5 +1,9 @@
 ublue_variants:
-  - label: nadavspi/nadavspi-ublue
+  - label: desktop
     ks: /kickstart/ublue-os.ks
     flavors:
-      - label: nadavspi-ublue
+      - label: nadavspi-desktop
+  - label: laptop
+    ks: /kickstart/ublue-os.ks
+    flavors:
+      - label: nadavspi-laptop

@@ -1,14 +1,4 @@
-name: nadavspi-ublue
-description: my ublue image
-
-base-image: ghcr.io/ublue-os/silverblue-main
-image-version: 39 
-
 modules:
-  - type: files
-    files:
-      - usr: /usr
-
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/coolj/awesome-luajit-nightly/repo/fedora-%OS_VERSION%/coolj-awesome-luajit-nightly-fedora-%OS_VERSION%.repo
@@ -28,11 +18,6 @@ modules:
     remove:
       - firefox 
       - firefox-langpacks 
-
-  - type: bling 
-    install:
-      - nix-installer 
-      - 1password 
 
   - type: default-flatpaks
     system:
