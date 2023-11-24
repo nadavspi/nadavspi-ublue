@@ -29,7 +29,6 @@ dotfiles-clone:
 
 firstboot hostname: dotfiles-clone
     chsh -s /usr/bin/zsh
-    sudo hostnamectl hostname {{ hostname }}
     curl https://github.com/nadavspi.keys | tee -a ~/.ssh/authorized_keys
     xdg-settings set default-web-browser org.mozilla.firefox.desktop
     rpm-ostree rebase ostree-image-signed:docker://ghcr.io/nadavspi/nadavspi-ublue:latest
