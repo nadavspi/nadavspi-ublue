@@ -9,11 +9,13 @@ modules:
       - flameshot
       - input-remapper
       - kitty
+      - lxpolkit
       - mpv
       - network-manager-applet
       - redshift
       - rofi
       - volumeicon
+      - xfce4-power-manager
       - zsh
     remove:
       - firefox 
