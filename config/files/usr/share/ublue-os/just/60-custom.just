@@ -25,7 +25,7 @@ dotfiles-clone:
     fi
     mkdir -p ~/src
     cd ~/src
-    git clone --recursive git@github.com:nadavspi/dotfiles.git
+    git clone --recursive houston.nadav.is:/srv/git/dotfiles.git
 
 firstboot hostname: dotfiles-clone
     chsh -s /usr/bin/zsh
