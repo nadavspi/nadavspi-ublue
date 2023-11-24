@@ -15,3 +15,5 @@ modules:
     install:
       - nix-installer 
       - 1password 
+      - justfiles
+      - laptop
