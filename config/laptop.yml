@@ -1,0 +1,19 @@
+name: nadavspi-laptop
+description: laptop image
+
+base-image: ghcr.io/ublue-os/silverblue-main
+image-version: 39 
+
+modules:
+  - type: files
+    files:
+      - usr: /usr
+
+  - from-file: base.yml
+
+  - type: bling 
+    install:
+      - nix-installer 
+      - 1password 
+      - justfiles
+      - laptop
