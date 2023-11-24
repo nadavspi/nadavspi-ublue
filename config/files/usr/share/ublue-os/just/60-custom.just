@@ -8,7 +8,7 @@ dotfiles-clone:
     fi
     mkdir -p ~/src
     cd ~/src
-    git clone git@github.com:nadavspi/dotfiles.git
+    git clone --recursive git@github.com:nadavspi/dotfiles.git
 
 USER := env_var('USER')
 HOST := env_var('HOSTNAME')
