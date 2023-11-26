@@ -12,6 +12,7 @@ modules:
       - lxpolkit
       - mpv
       - network-manager-applet
+      - pcmanfm
       - redshift
       - rofi
       - volumeicon
