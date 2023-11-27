@@ -13,7 +13,7 @@ modules:
       - mpv
       - network-manager-applet
       - pcmanfm
-      - redshift
+      - redshift-gtk
       - rofi
       - volumeicon
       - xfce4-power-manager
