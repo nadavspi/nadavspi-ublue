@@ -31,4 +31,6 @@ firstboot hostname: dotfiles-clone
     chsh -s /usr/bin/zsh
     curl https://github.com/nadavspi.keys | tee -a ~/.ssh/authorized_keys
     xdg-settings set default-web-browser org.mozilla.firefox.desktop
+
+rebase-signed:
     rpm-ostree rebase ostree-image-signed:docker://ghcr.io/nadavspi/nadavspi-ublue:latest
