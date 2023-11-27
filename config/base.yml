@@ -34,7 +34,6 @@ modules:
         - net.codeindustry.MasterPDFEditor
         - org.fcitx.Fcitx5
         - org.mozilla.firefox
-        - org.pulseaudio.pavucontrol
         - us.zoom.Zoom
 
   - type: script
