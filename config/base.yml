@@ -12,10 +12,10 @@ modules:
       - lxpolkit
       - mpv
       - network-manager-applet
+      - pasystray
       - pcmanfm
       - redshift-gtk
       - rofi
-      - volumeicon
       - xfce4-power-manager
       - zsh
     remove:
