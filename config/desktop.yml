@@ -11,6 +11,10 @@ modules:
 
   - from-file: base.yml
 
+  - type: rpm-ostree
+    install: 
+      - xcalib
+
   - type: bling 
     install:
       - nix-installer 
