@@ -2,6 +2,7 @@ modules:
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/coolj/awesome-luajit-nightly/repo/fedora-%OS_VERSION%/coolj-awesome-luajit-nightly-fedora-%OS_VERSION%.repo
+      - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
     install: 
       - awesome
       - blueman
@@ -16,6 +17,7 @@ modules:
       - pcmanfm
       - redshift-gtk
       - rofi
+      - tailscale
       - xfce4-power-manager
       - zsh
     remove:
