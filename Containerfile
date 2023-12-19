@@ -25,8 +25,8 @@ COPY cosign.pub /usr/share/ublue-os/cosign.pub
 
 # Copy the bling from ublue-os/bling into tmp, to be installed later by the bling module
 # Feel free to remove these lines if you want to speed up image builds and don't want any bling
-COPY --from=ghcr.io/nadavspi/bling:latest /rpms /tmp/bling/rpms
-COPY --from=ghcr.io/nadavspi/bling:latest /files /tmp/bling/files
+COPY --from=ghcr.io/ublue-os/bling:latest /rpms /tmp/bling/rpms
+COPY --from=ghcr.io/ublue-os/bling:latest /files /tmp/bling/files
 
 # Copy build scripts & configuration
 COPY build.sh /tmp/build.sh
@@ -34,7 +34,7 @@ COPY config /tmp/config/
 
 # Copy modules
 # The default modules are inside ublue-os/bling
-COPY --from=ghcr.io/nadavspi/bling:latest /modules /tmp/modules/
+COPY --from=ghcr.io/ublue-os/bling:latest /modules /tmp/modules/
 # Custom modules overwrite defaults
 COPY modules /tmp/modules/
 
