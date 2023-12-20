@@ -54,4 +54,6 @@ modules:
         - var-mnt-docs.automount
         - var-mnt-isos.automount
         - var-mnt-photos.automount
+        - node_exporter_tailscale.service
+      disabled:
         - node_exporter.service
