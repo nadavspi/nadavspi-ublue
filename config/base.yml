@@ -8,6 +8,7 @@ modules:
       - blueman
       - feh
       - flameshot
+      - golang-github-prometheus-node-exporter
       - input-remapper
       - kitty
       - lxpolkit
@@ -53,3 +54,4 @@ modules:
         - var-mnt-docs.automount
         - var-mnt-isos.automount
         - var-mnt-photos.automount
+        - node_exporter.service
