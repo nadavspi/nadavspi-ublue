@@ -60,7 +60,7 @@ jobs:
         env:
           COSIGN_EXPERIMENTAL: false
           COSIGN_PASSWORD: ""
-          COSIGN_PRIVATE_KEY: ${{ secrets.SIGNING_SECRET }}
+          COSIGN_PRIVATE_KEY: ${{ secrets.COSIGN_PRIVATE_KEY }}
         shell: bash
         run: |
           echo "Checking for difference between public key from SIGNING_SECRET and cosign.pub"
