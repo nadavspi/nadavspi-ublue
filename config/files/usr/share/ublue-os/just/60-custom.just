@@ -34,3 +34,5 @@ firstboot hostname: dotfiles-clone
 
 rebase-signed:
     rpm-ostree rebase ostree-image-signed:docker://ghcr.io/nadavspi/nadavspi-ublue:latest
+
+import '100-bling.just'
