@@ -1,7 +1,7 @@
 name: nadavspi-laptop
 description: laptop image
 
-base-image: ghcr.io/ublue-os/silverblue-main
+base-image: ghcr.io/ublue-os/bluefin
 image-version: 39 
 
 modules:

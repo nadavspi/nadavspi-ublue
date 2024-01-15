@@ -21,9 +21,6 @@ modules:
       - tailscale
       - xfce4-power-manager
       - zsh
-    remove:
-      - firefox 
-      - firefox-langpacks 
 
   - type: default-flatpaks
     system:
