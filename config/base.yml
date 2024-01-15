@@ -6,6 +6,7 @@ modules:
     install: 
       - awesome
       - blueman
+      - dex-autostart
       - feh
       - flameshot
       - golang-github-prometheus-node-exporter
