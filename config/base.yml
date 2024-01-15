@@ -12,6 +12,7 @@ modules:
       - golang-github-prometheus-node-exporter
       - input-remapper
       - kitty
+      - lxappearance
       - lxpolkit
       - mpv
       - network-manager-applet
@@ -21,6 +22,9 @@ modules:
       - rofi
       - tailscale
       - xfce4-power-manager
+      - xsecurelock
+      - xset
+      - xss-lock
       - zsh
 
   - type: default-flatpaks
