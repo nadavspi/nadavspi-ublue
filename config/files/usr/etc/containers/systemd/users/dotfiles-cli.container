@@ -16,13 +16,14 @@ Image=ghcr.io/nadavspi/dotfiles:latest
 HostName=%l
 Network=host
 PodmanArgs=--entrypoint /usr/bin/entrypoint
+PodmanArgs=--env SHELL=/bin/zsh
 PodmanArgs=--ipc host
 PodmanArgs=--label com.github.containers.toolbox=true
 PodmanArgs=--label manager=distrobox
 PodmanArgs=--no-hosts
 PodmanArgs=--privileged
-PodmanArgs=--security-opt label=disable
 PodmanArgs=--security-opt apparmor=unconfined
+PodmanArgs=--security-opt label=disable
 Ulimit=host
 User=root:root
 UserNS=keep-id
