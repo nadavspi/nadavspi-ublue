@@ -43,7 +43,7 @@ Volume=/var/home/%u:/var/home/%u:rslave
 Volume=%t:%t:rslave
 Volume=/etc/hosts:/etc/hosts:ro
 Volume=/etc/resolv.conf:/etc/resolv.conf:ro
-Volume=/mnt:/mnt
+Volume=/var/mnt:/mnt
 
 [Install]
 WantedBy=multi-user.target default.target
