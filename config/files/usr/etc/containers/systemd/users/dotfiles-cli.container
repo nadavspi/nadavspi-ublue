@@ -11,7 +11,7 @@ Environment=XDG_RUNTIME_DIR=%t
 Environment=USER=%u
 Environment=USERNAME=%u
 Environment=container=podman
-Exec=--verbose --name %u  --user %U --group %G --home %h
+Exec=--verbose --name %u  --user %U --group %G --home %h -- chezmoi update
 Image=ghcr.io/nadavspi/dotfiles:latest
 HostName=%l
 Network=host
