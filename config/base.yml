@@ -62,3 +62,4 @@ modules:
     user:
       enabled:
         - dotfiles-update.timer
+        - dotfiles-update.service
