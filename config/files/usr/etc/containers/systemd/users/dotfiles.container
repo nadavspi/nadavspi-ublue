@@ -44,6 +44,7 @@ Volume=%t:%t:rslave
 Volume=/etc/hosts:/etc/hosts:ro
 Volume=/etc/resolv.conf:/etc/resolv.conf:ro
 Volume=/var/mnt:/mnt
+Volume=/nix:/nix
 
 [Install]
 WantedBy=multi-user.target default.target
