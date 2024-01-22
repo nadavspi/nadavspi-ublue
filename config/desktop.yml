@@ -9,16 +9,40 @@ modules:
     files:
       - usr: /usr
 
-  - from-file: base.yml
-
   - type: rpm-ostree
+    repos:
+      - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
     install: 
-      - xcalib
-
-  - type: bling 
-    install:
-      - nix-installer 
+      - blueman
+      - dex-autostart
+      - gum
+      - kitty
+      - mpv
+      - network-manager-applet
+      - pasystray
+      - pcmanfm
+      - tailscale
+      - zsh
 
   - type: script
     scripts:
       - 1password.sh
+      - signing.sh
+
+  - type: systemd
+    system:
+      enabled:
+        - sshd.service
+        - var-mnt-appdata.automount
+        - var-mnt-backups.automount
+        - var-mnt-data.automount
+        - var-mnt-docker.automount
+        - var-mnt-docs.automount
+        - var-mnt-isos.automount
+        - var-mnt-photos.automount
+        - node_exporter_tailscale.service
+      disabled:
+        - node_exporter.service
+    user:
+      enabled:
+        - dotfiles-update.timer
