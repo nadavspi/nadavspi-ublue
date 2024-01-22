@@ -1,7 +1,7 @@
 name: nadavspi-desktop
 description: desktop image
 
-base-image: ghcr.io/ublue-os/bluefin
+base-image: ghcr.io/ublue-os/sericea-main
 image-version: 39 
 
 modules:
